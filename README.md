@@ -7,9 +7,9 @@ In this lab, you will containerize a machine learning training pipeline and infe
 
  - [ ] **Deliverable 1**: The training script has been run in a container and the resulting model is saved to a shared volume. Able to explain why Docker is useful for reproducibility and portability in ML training scenarios.
 
- - [ ] **Deliverable 2**: Containerize the inference service to serve predictions on a specific port and log predictions to a bind-mounted directory. Explain what the Dockerfile is and how it helps containerize the inference service.
+ - [ ] **Deliverable 2**: Containerize the inference service to serve predictions on a specific port and show the `./logs/predictions.log` file on your host to the TA.  Explain what the Dockerfile is and how it helps containerize the inference service.
 
- - [ ] **Deliverable 3**: Show the `./logs/predictions.log` file on your host to the TA and demonstrate that the model persists across `docker compose down` and `docker compose up`. Explain the difference between named volumes and bind mounts in Docker.
+ - [ ] **Deliverable 3**: Call the inference service health endpoint before and after destroying the named volume to demonstrate how model availability changes. Explain the difference between named volumes and bind mounts in Docker.
 
 
 ## Step 0: Setup Docker
