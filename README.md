@@ -173,7 +173,7 @@ Stop and remove containers while retaining the named volume:
 ```docker compose down```
 
 Restart only the inference container:
-```docker compose up inference```
+```docker compose up inference --no-deps```
 
 Run the health check again and confirm it still returns healthy, demonstrating that the model was successfully persisted in the named volume.
 
